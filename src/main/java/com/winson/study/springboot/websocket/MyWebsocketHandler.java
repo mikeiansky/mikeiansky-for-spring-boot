@@ -28,28 +28,29 @@ public class MyWebsocketHandler extends TextWebSocketHandler {
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-        super.handleTextMessage(session, message);
+//        super.handleTextMessage(session, message);
         System.out.println("handle text message ... " + message.getPayload());
-        session.sendMessage(message);
+        TextMessage response = new TextMessage("服务端返回消息：" + message.getPayload());
+        session.sendMessage(response);
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 10; i++) {
-                    try {
-                        Thread.sleep(100);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    try {
-                        session.sendMessage(new PingMessage());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-                System.out.println("complete ping message ... ");
-            }
-        }).start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                for (int i = 0; i < 10; i++) {
+//                    try {
+//                        Thread.sleep(100);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                    try {
+//                        session.sendMessage(new PingMessage());
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//                System.out.println("complete ping message ... ");
+//            }
+//        }).start();
     }
 
 }
