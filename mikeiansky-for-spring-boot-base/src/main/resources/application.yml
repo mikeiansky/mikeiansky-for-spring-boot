@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: mikeiansky-for-spring-boot-base
+io:
+  mikeiansky:
+    simple:
+      app:
+        name: mikeiansky
+        version: 1.0.2
+    list:
+      app:
+        - name: app1
+          version: v1.0
+        - name: app2
+          version: v2.0
+    map:
+      normal-app:
+        n-app1:
+          name: normal-app-01
+          version: v1.0.1
+        n-app2:
+          name: normal-app-02
+          version: v1.0.2
+      type-app:
+        web:
+          name: web-app
+          version: w1.0.1
+        server:
+          name: server-app
+          version: s2.0.2
+        client:
+          name: client-app
+          version: c3.0.3
