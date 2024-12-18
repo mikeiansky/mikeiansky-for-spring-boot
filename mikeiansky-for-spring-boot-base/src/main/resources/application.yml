@@ -4,6 +4,10 @@ spring:
 io:
   mikeiansky:
     simple:
+      spring:
+        base:
+          name: cc
+          age: 44
       app:
         name: mikeiansky
         version: 1.0.2
