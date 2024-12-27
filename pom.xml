@@ -15,8 +15,11 @@
 
 	<name>mikeiansky-for-spring-boot</name>
 	<description>Demo project for Spring Boot</description>
+    <modules>
+        <module>mikeiansky-for-spring-boot-kafka</module>
+    </modules>
 
-	<properties>
+    <properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
