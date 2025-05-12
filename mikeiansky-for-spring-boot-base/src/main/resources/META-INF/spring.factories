@@ -1,0 +1,4 @@
+org.springframework.boot.BootstrapRegistryInitializer=io.github.mikeiansky.springboot.base.initializer.SimpleBootstrapRegistryInitializer
+org.springframework.context.ApplicationContextInitializer=io.github.mikeiansky.springboot.base.initializer.SimpleApplicationContextInitializer,\
+  io.github.mikeiansky.springboot.base.initializer.SimpleApplicationContextInitializerTwo
+org.springframework.context.ApplicationListener=io.github.mikeiansky.springboot.base.initializer.SimpleApplicationListener

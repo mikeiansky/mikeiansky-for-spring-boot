@@ -30,7 +30,7 @@ public class MyConfigurationProperties {
     }
 
     public MyConfigurationProperties() {
-        System.out.println("MyConfigurationProperties");
+        System.out.println("MyConfigurationProperties instantiate");
     }
 
     public MyConfigurationProperties(String name, int age) {
