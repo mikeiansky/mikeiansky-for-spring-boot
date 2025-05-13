@@ -2,3 +2,6 @@ org.springframework.boot.BootstrapRegistryInitializer=io.github.mikeiansky.sprin
 org.springframework.context.ApplicationContextInitializer=io.github.mikeiansky.springboot.base.initializer.SimpleApplicationContextInitializer,\
   io.github.mikeiansky.springboot.base.initializer.SimpleApplicationContextInitializerTwo
 org.springframework.context.ApplicationListener=io.github.mikeiansky.springboot.base.initializer.SimpleApplicationListener
+io.github.mikeiansky.springboot.base.custom.spl.CustomSpringLoaderObject=io.github.mikeiansky.springboot.base.custom.spl.CustomSpringLoaderObjectOne,\
+  io.github.mikeiansky.springboot.base.custom.spl.CustomSpringLoaderObjectTwo,\
+  io.github.mikeiansky.springboot.base.custom.spl.CustomSpringLoaderObjectThree
