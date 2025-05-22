@@ -16,7 +16,7 @@ import org.springframework.util.ClassUtils;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class MikeianskyForSpringBootBaseApplication {
 
     public static void main(String[] args) throws Exception {
