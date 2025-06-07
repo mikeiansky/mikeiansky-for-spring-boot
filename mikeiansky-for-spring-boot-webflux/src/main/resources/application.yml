@@ -1,3 +1,7 @@
 spring:
   application:
     name: mikeiansky-for-spring-boot-webflux
+
+
+server:
+  port: 60061

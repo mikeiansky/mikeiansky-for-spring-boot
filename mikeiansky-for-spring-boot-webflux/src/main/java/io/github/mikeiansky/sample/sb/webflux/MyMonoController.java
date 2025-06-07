@@ -16,9 +16,13 @@ import java.time.Duration;
 @RestController
 public class MyMonoController {
 
+    static {
+        System.out.println("MyMonoController static block ... " + MyMonoController.class.getClassLoader());
+    }
+
     @GetMapping("hello")
-    public Mono<String> hello(String msg){
-        return Mono.delay(Duration.ofSeconds(2)).then(Mono.just("hello : "+msg));
+    public Mono<String> hello(String msg) {
+        return Mono.delay(Duration.ofSeconds(2)).then(Mono.just("hello : " + msg));
 //        return Mono.just("hello : "+msg);
     }
 
