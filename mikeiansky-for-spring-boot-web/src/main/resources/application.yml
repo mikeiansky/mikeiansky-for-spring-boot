@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: mikeiansky-for-spring-boot-web
+server:
+  port: 60060
