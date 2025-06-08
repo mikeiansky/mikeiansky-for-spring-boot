@@ -1,6 +1,7 @@
 spring:
   application:
     name: mikeiansky-for-spring-boot-base
+
 io:
   mikeiansky:
     simple:
@@ -35,3 +36,7 @@ io:
         client:
           name: client-app
           version: c3.0.3
+my:
+  properties:
+    name: test
+    hello: world

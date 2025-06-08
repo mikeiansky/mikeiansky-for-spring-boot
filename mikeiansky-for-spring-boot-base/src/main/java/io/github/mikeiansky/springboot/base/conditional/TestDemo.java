@@ -1,6 +1,6 @@
 package io.github.mikeiansky.springboot.base.conditional;
 
-import org.ian.anole.collection.CollectionUtils;
+//import org.ian.anole.collection.CollectionUtils;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class TestDemo {
 
     public static void main(String[] args) {
-        System.out.println(CollectionUtils.isEmpty(List.of()));
+//        System.out.println(CollectionUtils.isEmpty(List.of()));
 
     }
 

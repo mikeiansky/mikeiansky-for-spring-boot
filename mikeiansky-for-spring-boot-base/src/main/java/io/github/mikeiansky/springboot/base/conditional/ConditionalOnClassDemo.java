@@ -1,7 +1,7 @@
 package io.github.mikeiansky.springboot.base.conditional;
 
 import io.github.mikeiansky.utils.CollKit;
-import org.ian.anole.collection.CollectionUtils;
+//import org.ian.anole.collection.CollectionUtils;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -27,7 +27,7 @@ public class ConditionalOnClassDemo {
     public static class PackageScanConfiguration {
 
         // 这里的条件类不存在则无法注册
-        @ConditionalOnClass(value = CollectionUtils.class)
+//        @ConditionalOnClass(value = CollectionUtils.class)
         @Component
         public static class ConditionalBeanFlag {
 
