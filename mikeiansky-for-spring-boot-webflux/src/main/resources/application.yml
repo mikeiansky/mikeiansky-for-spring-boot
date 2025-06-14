@@ -5,3 +5,8 @@ spring:
 
 server:
   port: 60061
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web: debug
