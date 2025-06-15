@@ -31,8 +31,6 @@ public class MyMonoController {
 //                .retrieve()
 //                .bodyToMono(String.class)
 //                .subscribe(System.out::println);
-
-
         return Mono
                 .deferContextual(contextView -> {
                     Optional<String> userId = contextView.getOrEmpty("userId");
