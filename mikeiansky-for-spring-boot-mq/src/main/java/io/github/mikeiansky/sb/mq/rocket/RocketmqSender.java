@@ -6,6 +6,7 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.StandardCharsets;
+import java.time.Duration;
 
 /**
  *
@@ -27,6 +28,9 @@ public class RocketmqSender {
         Message<byte[]> message = MessageBuilder.withPayload(bytes)
                 .build();
         rocketMQClientTemplate.send("topic_test", message);
+
+        rocketMQClientTemplate.syncSendFifoMessage("topic_test", "test-fifo-msg", "MyTopic-service");
+//        rocketMQClientTemplate.syncSendDelayMessage("topic_test", "test-delay-msg", Duration.ofSeconds(30));
     }
 
 }
